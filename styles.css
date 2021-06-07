@@ -31,40 +31,50 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+.box > section{
+    width: 60%
+}
 .infoHelp{
     flex-direction: column;
-    width: 60%;
+    width: 50%;
 }
 
 .box > section > #photo404{
-    width: 80%;
-    padding: 0;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
+.box > section > #photo404,
 .infoHelp > section{
-    padding: 10px;
+    padding: 15px;
 }
+
 .infoHelp > section > .subtitle{
-    font-size: 50px;
-    color: #504f4f;
+    font-size: 55px;
+    color: #2e2d2d;
+    overflow: hidden ;
 }
 
 .infoHelp > section .description{
-    width: 350px;
     line-height: 30px;
     font-size: 20px;
-    color: #636363
+    color: #636363;
+    overflow: hidden ;
+    padding: 10px;
 }
 
 .infoHelp > section .boton{
     height: 60px;
     width: 210px;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     background-color: #302f2f;
     color: #e7e3e3;
     border: none;
     cursor: pointer;
+    margin-left: 15px;
 }
 
 .infoHelp > section > .subtitle,
@@ -86,4 +96,49 @@ body{
 
 .container-footer > .copyrigth{
     font-size: 12px;
+}
+
+/* Resposive design */
+@media screen and (max-width:  1024px){
+    .infoHelp > section > .subtitle{
+        font-size: 55px;
+    }
+    .infoHelp > section .description{
+        font-size: 18px;
+    }
+    .infoHelp > section .boton{
+        width: 180px;
+        height: 50px;
+        font-size: 15px;
+    }
+    .infoHelp > section > .subtitle,
+    .infoHelp > section .description,
+    .infoHelp > section .boton{
+        margin-top: 20px;
+    }
+    .container-footer{
+        height: 90px;
+    }
+}
+
+@media screen and (max-width:  769px){
+    .container .box{
+        flex-direction: column;
+    }
+    .infoHelp{
+        width: 100%;
+        text-align: center;
+    }
+    .container .infoHelp section > .subtitle{
+        font-size: 45px;
+    }
+    .infoHelp > section .description{
+        font-size: 15px;
+    }
+    .box > section > #photo404{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
 }
