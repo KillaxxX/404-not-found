@@ -91,7 +91,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 150px;
 }
 
 .container-footer > .copyrigth{
@@ -115,9 +114,6 @@ body{
     .infoHelp > section .description,
     .infoHelp > section .boton{
         margin-top: 20px;
-    }
-    .container-footer{
-        height: 90px;
     }
 }
 
