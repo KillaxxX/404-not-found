@@ -14,7 +14,12 @@ body{
     display: flex;
     flex-direction: column;
 }
-section > .title{
+.boxTitle{
+    margin: 10px;
+    padding: 15px;
+}
+
+.boxTitle > section > .title{
     margin: 10px;
     padding: 10px;
     font-size: 18px;
@@ -26,16 +31,21 @@ section > .title{
     justify-content: center;
     align-items: center;
 }
+.infoHelp{
+    flex-direction: column;
+    width: 60%;
+}
 
-section > #photo404{
-    width: 500px;
+.box > section > #photo404{
+    width: 80%;
+    padding: 0;
 }
 
 .infoHelp > section{
     padding: 10px;
 }
 .infoHelp > section > .subtitle{
-    font-size: 60px;
+    font-size: 50px;
     color: #504f4f;
 }
 
@@ -51,13 +61,29 @@ section > #photo404{
     width: 210px;
     text-align: center;
     font-size: 18px;
-    background-color: #3b3b3b;
+    background-color: #302f2f;
     color: #e7e3e3;
     border: none;
+    cursor: pointer;
 }
 
 .infoHelp > section > .subtitle,
 .infoHelp > section .description,
 .infoHelp > section .boton{
     margin-top: 40px;
+}
+
+.container .box,
+.container-footer{
+    margin-top: 35px;
+}
+.container-footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 150px;
+}
+
+.container-footer > .copyrigth{
+    font-size: 12px;
 }
